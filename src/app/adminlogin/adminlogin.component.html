@@ -1,0 +1,65 @@
+<section class="vh-100 mt-5">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://www.kindpng.com/picc/m/121-1219046_img-ecommerce-multi-vendor-hd-png-download.png"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+
+          <form class="form-group" (ngSubmit)="onSubmit()">
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="name" name="username"  class="form-control form-control-lg"
+                placeholder="Enter username" required >
+              <label class="form-label" for="form3Example3">username</label>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="password" name="password" class="form-control form-control-lg"
+                placeholder="Enter password" required/>
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+            
+            <div class="text-center text-lg-start mt-3 pt-2">
+              
+              <button type="submit"  class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a routerLink="/patient-register"
+                class="link-danger">Register</a></p>
+            </div>
+  
+          </form>
+          
+          <div class="d-flex justify-content-between align-items-center mt-5">
+            <div class="h4 text-danger">
+              Switch to customer
+            </div>
+            <div class="opacity-50">
+              <img src="https://img.icons8.com/ios-filled/100/chevron-right.png" alt="">
+            </div>
+          <div class="patient" >
+            <a href="/customerlogin">
+              <img src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/100/external-customer-shopping-and-retail-smashingstocks-flat-smashing-stocks-2.png" alt="">
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+

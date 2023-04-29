@@ -1,0 +1,57 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom mt-5">
+      <form >
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          
+          <div class="col-md-9 col-lg-6 col-xl-5">
+          <div class="text-danger fw-bold">
+          </div>
+
+            <!-- Name input -->
+            <div class="form-outline mb-4 mt-4">
+                <input type="text"  [(ngModel)]="vendor.product_name" formControlName = "name" class="form-control form-control-lg"
+                  placeholder="Enter Product Name" >
+                <label class="form-label" >Product</label>
+              </div>
+      
+              <!-- categeory -->
+              <div class="form-outline mb-4">
+                <input type="text"  [(ngModel)]="vendor.product_cost" formControlName = "categeory" required class="form-control form-control-lg"
+                  placeholder="Enter Product image" >
+                <label class="form-label" >Image upload</label>
+              </div>
+      
+              <!-- Mobile input -->
+              <div class="form-outline mb-4">
+                  <input type="text"  [(ngModel)]="vendor.product_info" formControlName = "mobile_number" required class="form-control form-control-lg"
+                    placeholder="Enter Product Price" >
+                  <label class="form-label" >Price</label>
+                </div>
+      
+              <!-- timings input -->
+              <div class="form-outline mb-4">
+                <input type="text"  [(ngModel)]="vendor.product_image" formControlName = "timings" class="form-control form-control-lg"
+                  placeholder="Enter Product info" >
+                <label class="form-label">Info</label>
+              </div>
+        </div>
+
+
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mt-5">
+            
+            <!-- submit-->
+            <div class="text-center text-lg-start mt-3 pt-2">
+              <button type="submit" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Add Item</button>
+            </div>
+          
+  
+        </div>
+    </div>
+</form>
+</div>
+   
+  </section>
+
+
+

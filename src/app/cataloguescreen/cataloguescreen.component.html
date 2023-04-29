@@ -1,0 +1,18 @@
+<div>
+    catelogue test
+</div>
+<div class="container" style="position:absolute; margin-top:7%;margin-left: 7%;">
+    <div class="row" >
+        <ng-container>
+        <div class="card col-md-3" style="padding:20px"  *ngFor="let items of list">
+            <img src="{{vendor.product_image}}" alt="">
+            <h5 style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{vendor.product_name}}</h5>
+            <h3 style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{vendor.product_cost}}</h3>
+            <p style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{vendor.product_info}}</p>
+            <p></p>
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+    </ng-container>
+    </div>
+</div>
+
